@@ -49,3 +49,26 @@ b=30
 print(a==10 and b==20)
 print(a==10 or b==20)
 
+## Accepting Input & Adding Numbers
+num1 = int(input("Enter first number "))
+num2 = int(input("Enter second number "))
+summed_num = num1 + num2
+print(summed_num)
+
+## Creating Username & Email Using Concatenation
+firstname = input('Enter firstname: ')
+lastname = input('Enter lastname: ')
+username = firstname + lastname
+print("Username is: ",username)
+
+email = username + '@gmail.com'
+print("Email is: ",email)
+
+## Comparing User Strings
+
+saved_password = "admin@1234"
+user_password = input("Enter password ")
+if saved_password == user_password:
+    print("The entered pasword is correct")
+else:
+    print("The entered pasword is Incorrect")
