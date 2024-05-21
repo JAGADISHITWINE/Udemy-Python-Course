@@ -70,3 +70,44 @@ print(a)
 fruits = ('apple', 'mango', 'peach', 'orange', 'watermelon', 'grapes')
 print(fruits)
 print(type(fruits))
+
+## Searching Items In A List
+products = ['phone', 'tablet', 'laptop', 'journal']
+item = input("Enter product to search: ")
+print(item in products)
+
+## Adding & Removing Items
+products = ['phone', 'tablet', 'laptop', 'journal']
+
+#displaying products
+print(f'Current list of items: {products}')
+
+#asking user to remove a product
+item = input("Enter a product to remove: ")
+products.remove(item)
+
+#displaying the entire list after removing item
+print(f'List of items after removing: {products}')
+
+#asking user to add a product
+add_item = input("Enter a product to add: ")
+products.append(add_item)
+
+#displaying the entire list after adding item
+print(f'List of items after adding: {products}')
+
+## Adding List Item At A Position
+products = ['phone', 'tablet', 'laptop', 'journal']
+
+#displaying products
+print(f'Current list of items: {products}')
+
+#asking user to add a product
+add_item = input("Enter a product to add: ")
+
+add_after = input(f'After which product do you want to place {add_item} ')
+index = products.index(add_after)
+products.insert(index+1,add_item)
+
+#displaying products
+print(f'Current list of items: {products}')
