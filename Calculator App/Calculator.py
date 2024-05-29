@@ -51,7 +51,7 @@ for x in range(3):
     for y in range(3):
         button_text = numbers[counter]
         button = Button(root,text=button_text,width=3,height=2,command=lambda text=button_text:get_number(text))
-        button.grid(row=x+2,column=y)
+        button.grid(row=x+2,column=y,sticky='nsew')
         counter+=1
         
 button = Button(root,text='0',width=3,height=2,command=lambda text=button_text:get_number(0))
@@ -62,11 +62,11 @@ for x in range(4):
     for y in range(3):
         if count<len(operations):
             button = Button(root,text=operations[count],width=3,height=2,bg='lightblue',command=lambda text=operations[count]:get_operator(text))
+            button.grid(row=x+2,column=y+3,sticky='nsew')
             count+=1
-            button.grid(row=x+2,column=y+3)
             
-Button(root,text='AC',width=3,height=2,bg='tomato',command=clear_all).grid(row=5,column=0)
-Button(root,text='=',width=3,height=2,command=calculate).grid(row=5,column=4,columnspan=2, sticky='ew')
-Button(root,text='Del',width=3,height=2,bg='grey',command=undo).grid(row=5,column=2)
+Button(root,text='AC',width=3,height=2,bg='tomato',command=clear_all).grid(row=5,column=0,sticky='nsew')
+Button(root,text='=',width=3,height=2,bg='lightgreen',command=calculate).grid(row=5,column=4,columnspan=2, sticky='nsew')
+Button(root,text='Del',width=3,height=2,bg='grey',command=undo).grid(row=5,column=2,sticky='nsew')
 
 root.mainloop()
