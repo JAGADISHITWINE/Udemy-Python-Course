@@ -1,0 +1,31 @@
+1. Mysite is a entire site project and Myapp is simply a single application in our entire website.
+
+2. Command to create project - "django-admin startproject 'projectname'."
+
+3. Command to create myapp - "django-admin startapp 'myapp'".
+
+4. Command to see the server is up and running - "python manager.py runserver".
+
+1 . Create Task in model.py
+
+a. Add myapp in settings.py @INSTALLED_APPS
+
+2. Command to make migration - "python manage.py makemigrations"(It will create a model called as task).
+
+3. Command to make migration - "python manage.py migrate"(All the migrations have been applied and a new model which is called as task).
+
+4. Create a Super User. In order to create a super user, type in "python manage.py createsuperuser."
+
+5. Register models into the admin.py
+
+6. Inside the views.py file, start writing the view in order to create Add Functionality.
+
+7. In order to create templates, go inside the myapp, create a new folder, name it as templates,and in this folder, again,
+ create a new folder called as my app, and now inside this myapp create a file called as add.html.
+
+8. Add a URL pattern to associate with this particular add view.py file and import views from my app.
+
+9. Adding Bootstrap, create a new file inside our templates directory and  name it as base.html..
+
+10 .Extend from myapp/base.html to add.html file.
+
