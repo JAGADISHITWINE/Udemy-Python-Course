@@ -29,3 +29,10 @@ a. Add myapp in settings.py @INSTALLED_APPS
 
 10 .Extend from myapp/base.html to add.html file.
 
+View : A callable which accepts a request and returns a response.
+Views : it is a Function based, Class based.
+Django provides built-in class based generic views.
+
+List-view: Used to display a list of items.
+
+Generic views : Listview, Detailview, Createview, Updateview, Deleteview.
